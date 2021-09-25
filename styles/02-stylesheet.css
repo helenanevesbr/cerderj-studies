@@ -1,0 +1,211 @@
+body{
+    background-color: #FF5555;
+    color: #FFDD22;
+    font-family: Lato, Georgia, serif;
+}
+header{
+    display:block;
+    border-bottom-style: solid;
+    margin-bottom: 1px;
+}
+nav{
+    margin-right: 10px;
+    font-weight: bold;
+    font-family: Rubik, Verdana, sans-serif;
+    display:block;
+    width: 200px;
+    float: left;
+}
+section{
+    display:block;
+    width: 70%;
+    float: right;
+}
+ol{
+    line-height: 200%;
+}
+ul{
+    line-height: 200%;
+}
+nav ul{
+    color: #FFDD22;
+    line-height: 230%;
+    margin-top: 40px;
+    list-style-type: disc;
+}
+.listaComMel{
+    width: 340px;
+    color: #AA0000;
+    background-color: #EECC88;
+    padding: 10px 10px 10px 50px;
+    border: 2px solid #000055;
+    margin: 0px auto 10px;
+}
+.listaComMel ul{
+    list-style-type: square;
+    color:#AA0000;
+}
+.listaComMel ol{
+    list-style-type: upper-roman;
+}
+table{
+    text-align: left;
+}
+a:link{
+    text-decoration: solid;
+    color: #FFDD00;
+}
+a:visited{
+    color:#FFBB00;
+}
+.ender{
+    text-align: right;
+    font-size: 14px;
+    line-height: 140%;
+    float: right;
+}
+.imgLogo{
+    border-bottom: 3px, solid;
+    margin-bottom: 6px;
+    padding-bottom: 5px;
+}
+.apres{
+    text-align: center;
+    font-size: 18px;
+}
+.titulo{
+    text-align: center;
+}
+.preco{
+    color: #EE0000;
+    font-weight: bold;
+}
+.tabDaBel{
+    border-collapse:collapse;
+    margin: 6px auto 10px;
+    background-color: #FFCC44;
+    color:#000066;
+    font-family: Rubik, verdana, sans-serif;
+}
+.tabDaBel th, td{
+    border: 3px solid #226699;
+    padding: 6px 12px;
+}
+.tabDaBel .titulo{
+    color:#FFFF00;
+    background-color: #228855;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+}
+.tabDaBel .linTH{
+    color:#FFFFFF;
+    background-color: #22AA55;
+    vertical-align: middle;
+    text-align: center;
+}
+.tabDaBel .colTH{
+    color:#FFFFFF;
+    background-color: #2299DD;
+    text-align: left;
+}
+.tabDaBel .imgDaBel{
+    width: 70px;
+    height: 70px;
+}
+.divCompras{
+    width: 550px;
+    color: #2255AA;
+    background-color: #EEEEAA;
+    padding: 6px 6px 15px 6px;
+    font-size: 14px;
+    margin: 20px auto;
+    border: 2px solid #77CCDD;
+}
+.listaCompras{
+    width: 210px;
+    height: 160px;
+    float:right;
+    margin: 2px auto auto 10px;
+}
+.colLabSelProd{
+    width: 230px;
+    height: 40px;
+    float:left;
+}
+.colSelProd{
+    width: 160px;
+    float:right;
+}
+.linhaProdSel{
+    width: 220px;
+    margin-bottom: 6px;
+    float:left;
+}
+.elemEsq{
+    display:block;
+    float: left;
+}
+.elemDir{
+    display:block;
+    float: right;
+}
+.botoes{
+    text-align: right;
+    margin: 20px 10px 0px 10px;
+}
+fieldset .fsEsq{
+    display:inline;
+    float:left;
+    margin:0px
+}
+fieldset .fsDir{
+    display:inline;
+    float:right;
+    margin:0px
+}
+.inpGrande{
+    width: 380px;
+}
+.inpMedio{
+    width: 80px;
+}
+.inpNCC{
+    width: 130px;
+}
+.inpTele{
+    width: 90px;
+}
+.inpEnder{
+    width: 180px;
+    height: 50px;
+}
+.numDD{
+    width: 30px;
+}
+.numQD{
+    width: 50px;
+}
+.divLinha{
+    width: 500px;
+}
+.colLabCrd{
+    width: 260px;
+    height: 40px;
+    float:left;
+}
+.colPri{
+    display: block;
+    float: left;
+    width: 90px;
+}
+.colPriCompras{
+    display: block;
+    float: left;
+    width: 86px;
+}
+.colPriPag{
+    display:block;
+    float:left;
+    width: 250px;
+}
