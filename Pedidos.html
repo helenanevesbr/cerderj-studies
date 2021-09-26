@@ -54,10 +54,9 @@
                                 <input type="tel" name="tel" class="inpTelef">
                             </div>
                             <div class="divLinha">
-
-                            </div>
-                            <label for="celular">Celular:</label>
+                                <label for="celular">Celular:</label>
                                 <input type="tel" name="tel">
+                            </div>
                             <fieldset class="fsDir">
                                 <legend><label for="genero">Genero:</label></legend>
                                     <input type="radio" value="masculino" name="genero">Masculino
@@ -103,20 +102,30 @@
                                 <legend><label for="cartão">
                                     Cartão
                                 </label></legend>
-                                <label for="bandeira">Bandeira:</label>
+                                <div class="divLinha">
+                                    <label for="bandeira">Bandeira:</label>
                                     <input type="radio" value="visa" name="bandeira">Visa
                                     <input type="radio" value="master" name="bandeira">Master
                                     <input type="radio" value="elo" checked="" name="bandeira">Elo
-                                <label for="validade">Validade:</label>
+                                </div>
+                                <div class="divLinha">
+                                    <label for="validade">Validade:</label>
                                     <input type="number" max="12" class="numDD">/<input type="number" max="2021" class="numQD">
-                                <label for="número">Número:</label>
+                                </div>
+                                <div class="divLinha">
+                                    <label for="número">Número:</label>
                                     <input type="number" class="inpNCC">
+                                </div>
                             </fieldset>
                             <textarea readonly class="listaCompras"></textarea>
-                            <label for="valor">Valor R$</label><input type="text" readonly>
+                            <div class="divLinha">
+                                <label for="valor">Valor R$</label><input type="text" readonly>
+                            </div>
                         </fieldset>
-                        <button type="submit" value="enviar" class="botoes">Enviar</button>
-                        <button type="reset" value="limpar" class="botoes">Limpar</button>
+                        <div text-align="right">
+                            <button type="submit" value="enviar" class="botoes">Enviar</button>
+                            <button type="reset" value="limpar" class="botoes">Limpar</button>
+                        </div>
                     </form>
                 </th>
             </tr>

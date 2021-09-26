@@ -151,7 +151,6 @@ a:visited{
     float: right;
 }
 .botoes{
-    text-align: right;
     margin: 20px 10px 0px 10px;
 }
 fieldset .fsEsq{
@@ -188,6 +187,7 @@ fieldset .fsDir{
 }
 .divLinha{
     width: 500px;
+    margin-bottom: 6px;
 }
 .colLabCrd{
     width: 260px;
