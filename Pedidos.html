@@ -32,46 +32,52 @@
                 </th>
                 <th>
                     <form class="divCompras">
-                        Compras 
+                        Compras
                         <fieldset class="">
                             <legend><label for="identificação">
                                 Identificação
                             </label></legend>
-                            <div class="divLinha">
-                                <label for="nome">Nome:</label>
-                                <input type="text" name="nome" class="inpGrande">
+                                <div class="divLinha">
+                                    <label for="nome">Nome:</label>
+                                    <input type="text" name="nome" class="inpGrande">
+                                </div>
+                                <div class="divLinha">
+                                    <label for="email">E-mail:</label>
+                                    <input type="email" name="email" class="inpGrande">
+                                </div>
+                                <div class="colPri">
+                                    <div class="divLinha">
+                                        <label for="endereço">Endereço:</label>
+                                        <textarea name="endereço" class="inpEnder"></textarea>
+                                    </div>
+                                    <div class="divLinha">
+                                        <label for="telefone">Telefone:</label>
+                                        <input type="tel" name="tel" class="inpTelef">
+                                    </div>
+                                    <div class="divLinha">
+                                        <label for="celular">Celular:</label>
+                                        <input type="tel" name="tel" class="inpMedio">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="divLinha">
-                                <label for="email">E-mail:</label>
-                                <input type="email" name="email" class="inpGrande">
+                            <div class="elemDir">
+                                <fieldset>
+                                    <legend><label for="genero">Genero:</label></legend>
+                                        <input type="radio" value="masculino" name="genero">Mas
+                                        <input type="radio" value="feminino" name="genero">Fem
+                                        <input type="radio" value="outro" name="genero">Outro
+                                </fieldset>
+                                <fieldset>
+                                    <legend><label for="nascimento">Nascimento:</label></legend>
+                                        <input type="number" max="31" class="numDD">/<input type="number" max="12" class="numDD">/<input type="number" max="2021" class="numQD">
+                                </fieldset>
                             </div>
-                            <div class="divLinha">
-                                <label for="endereço">Endereço:</label>
-                                <textarea name="endereço" class="inpEnder"></textarea>
-                            </div>
-                            <div class="divLinha">
-                                <label for="telefone">Telefone:</label>
-                                <input type="tel" name="tel" class="inpTelef">
-                            </div>
-                            <div class="divLinha">
-                                <label for="celular">Celular:</label>
-                                <input type="tel" name="tel">
-                            </div>
-                            <fieldset class="fsDir">
-                                <legend><label for="genero">Genero:</label></legend>
-                                    <input type="radio" value="masculino" name="genero">Masculino
-                                    <input type="radio" value="feminino" name="genero">Feminino
-                                    <input type="radio" value="outro" name="genero">Outro
-                            </fieldset>
-                            <fieldset class="fsDir">
-                                <legend><label for="nascimento">Nascimento:</label></legend>
-                                    <input type="number" max="31" class="numDD">/<input type="number" max="12" class="numDD">/<input type="number" max="2021" class="numQD">
-                            </fieldset>
                         </fieldset>
-                        <fieldset class="">
+                        <fieldset>
                             <legend><label for="seleção de produtos e pagamento">
                                 Seleção de Produtos e Pagamento
                             </label></legend>
+                            <div class="">
                             <select name="linhaProdSel" class="linhaProdSel">
                                 <option disabled="" selected="" value="">
                                     -----
@@ -97,34 +103,41 @@
                                     <option value="spray">Spray</option>
                                 </optgroup>
                             </select>
+                            </div>
                             <button>Comprar</button>
-                            <fieldset class="fsEsq">
-                                <legend><label for="cartão">
-                                    Cartão
-                                </label></legend>
-                                <div class="divLinha">
-                                    <label for="bandeira">Bandeira:</label>
-                                    <input type="radio" value="visa" name="bandeira">Visa
-                                    <input type="radio" value="master" name="bandeira">Master
-                                    <input type="radio" value="elo" checked="" name="bandeira">Elo
+                            <div class="colPriCompras cartaoEReadonly">
+                                <div>
+                                    <fieldset class="fsEsq">
+                                        <legend><label for="cartão">
+                                            Cartão
+                                        </label></legend>
+                                        <div class="colLabCrd">
+                                            <label for="bandeira">Bandeira:</label>
+                                            <input type="radio" value="visa" name="bandeira">Visa
+                                            <input type="radio" value="master" name="bandeira">Master
+                                            <input type="radio" value="elo" checked="" name="bandeira">Elo
+                                        </div>
+                                        <div class="colLabCrd">
+                                            <label for="validade">Validade:</label>
+                                            <input type="number" max="12" class="numDD">/<input type="number" max="2021" class="numQD">
+                                        </div>
+                                        <div class="colLabCrd">
+                                            <label for="número">Número:</label>
+                                            <input type="number" class="inpNCC">
+                                        </div>
+                                    </fieldset>
                                 </div>
-                                <div class="divLinha">
-                                    <label for="validade">Validade:</label>
-                                    <input type="number" max="12" class="numDD">/<input type="number" max="2021" class="numQD">
+                                <div>
+                                    <textarea readonly class="listaCompras"></textarea>
                                 </div>
-                                <div class="divLinha">
-                                    <label for="número">Número:</label>
-                                    <input type="number" class="inpNCC">
-                                </div>
-                            </fieldset>
-                            <textarea readonly class="listaCompras"></textarea>
-                            <div class="divLinha">
+                            </div>
+                            <div class="colPriPag">
                                 <label for="valor">Valor R$</label><input type="text" readonly>
                             </div>
                         </fieldset>
-                        <div text-align="right">
-                            <button type="submit" value="enviar" class="botoes">Enviar</button>
-                            <button type="reset" value="limpar" class="botoes">Limpar</button>
+                        <div class="botoes">
+                            <button type="submit" value="enviar">Enviar</button>
+                            <button type="reset" value="limpar">Limpar</button>
                         </div>
                     </form>
                 </th>

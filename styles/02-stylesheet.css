@@ -151,14 +151,15 @@ a:visited{
     float: right;
 }
 .botoes{
+    text-align: right;
     margin: 20px 10px 0px 10px;
 }
-fieldset .fsEsq{
+.fsEsq{
     display:inline;
     float:left;
     margin:0px
 }
-fieldset .fsDir{
+.fsDir{
     display:inline;
     float:right;
     margin:0px
@@ -208,4 +209,11 @@ fieldset .fsDir{
     display:block;
     float:left;
     width: 250px;
+}
+.cartaoEReadonly{
+    display: flex;
+    width: 100%;
+}
+.cartaoEReadonly div{
+    flex:1
 }
